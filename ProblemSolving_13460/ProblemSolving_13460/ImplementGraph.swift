@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+public enum EdgeType {
+    case directed
+    case undirected
+}
+
+public protocol Graph {
+    associatedtype
+}
