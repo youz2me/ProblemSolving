@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "01E3D958-2B42-4111-A849-CF49776722B9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3384E9CF-005C-4F20-A2D9-7BC7EA7C5EC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProblemSolving_18870/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "3384E9CF-005C-4F20-A2D9-7BC7EA7C5EC6 - f25afc8790247bb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "ProblemSolving_18870"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/youz2me/Xcode/ProblemSolving/ProblemSolving_18870/ProblemSolving_18870/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "1184">
+               </Location>
+               <Location
+                  uuid = "3384E9CF-005C-4F20-A2D9-7BC7EA7C5EC6 - f25afc8790247c05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "ProblemSolving_18870"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/youz2me/Xcode/ProblemSolving/ProblemSolving_18870/ProblemSolving_18870/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "1228">
+               </Location>
+               <Location
+                  uuid = "3384E9CF-005C-4F20-A2D9-7BC7EA7C5EC6 - f25afc8790247c05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "ProblemSolving_18870"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/youz2me/Xcode/ProblemSolving/ProblemSolving_18870/ProblemSolving_18870/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "1252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
