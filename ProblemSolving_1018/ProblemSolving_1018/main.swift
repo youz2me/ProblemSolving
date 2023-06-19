@@ -2,34 +2,36 @@
 //  main.swift
 //  ProblemSolving_1018
 //
-//  Created by YOUJIM on 2023/05/21.
+//  Created by YOUJIM on 2023/06/19.
 //
 
-import Foundation
+//import Foundation
 
-var input = readLine()!.components(separatedBy: " ").map { Int($0)! }
-var coordinates = [[String]]()
-var numToSwitch = 0
-var minToSwitch = 10000001
+let input = readLine()!.split(separator: " ").map{ Int($0)! }
+let m = input[0]
+let n = input[1]
+var minCount = m * n
+var coordinate = [[String]]()
 
-for _ in 0 ..< input[0] {
-    coordinates.append(readLine()!.split(separator: "").map { String($0) })
-}
+for _ in 0 ..< m { coordinate.append(readLine()!.map{ String($0) }) }
 
-for k in 0... input[0] - 8
-for j in 0 ..< coordinates.count {
-    for i in 0..<coordinates[j].count {
-        if j % 2 == 1 {
-            if (i % 2 == 0 && coordinates[j][i] == "W") || (i % 2 == 1 && coordinates[j][i] == "B") {
-                numToSwitch += 1
+for i in 0 ..< (m - 7) {
+    for j in 0 ..< (n - 7) {
+        var count1 = 0
+        var count2 = 0
+        for x in i ..< (i + 8) {
+            for y in j ..< (j + 8) {
+                if (x + y) % 2 == 0 {
+                    if coordinate[x][y] == "B" { count1 += 1 }
+                    else { count2 += 1 }
+                } else {
+                    if coordinate[x][y] == "W" { count1 += 1 }
+                    else { count2 += 1 }
+                }
             }
         }
-        else {
-            if (i % 2 == 1 && coordinates[j][i] == "W") || (i % 2 == 0 && coordinates[j][i] == "B") {
-                numToSwitch += 1
-            }
-        }
+        minCount = min(minCount, count1, count2)
     }
 }
 
-print(numToSwitch)
+print(minCount)
