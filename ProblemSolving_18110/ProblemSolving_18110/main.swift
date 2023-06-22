@@ -7,16 +7,21 @@
 
 import Foundation
 
+let num = Int(readLine()!)!
 var inputs = [Int]()
 
-for _ in 1...Int(readLine()!)! { inputs.append(Int(readLine()!)!) }
+for _ in 0..<num { inputs.append(Int(readLine()!)!) }
 
-inputs.sort()
+if num != 0 {
+    inputs.sort()
 
-let trimmed = Int(round(Double(inputs.count) * 0.15))
-let result = inputs[trimmed..<(inputs.count - trimmed)]
-var count = 0.0
+    let trimmed = Int(round(Double(num) * 0.15))
+    let results = inputs[trimmed..<(num - trimmed)]
+    var count = 0.0
 
-for res in result { count += Double(res) }
+    for res in results { count += Double(res) }
 
-print(Int(round(count/Double(result.count))))
+    print(Int(round(count/Double(results.count))))
+}
+else { print(0) }
+
