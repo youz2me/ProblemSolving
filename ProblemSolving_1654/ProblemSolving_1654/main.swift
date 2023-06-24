@@ -5,12 +5,7 @@
 //  Created by YOUJIM on 2023/06/23.
 //
 
-// 이분탐색으로 길이를 찾고
-// 매개변수 탐색으로 최댓값을 찾음
-
 // input[0] == 오영식이 이미 가지고 있는 랜선의 개수 K, input[1] == 필요한 랜선의 개수
-
-//import Foundation
 
 var input = readLine()!.split(separator: " ").map {Int($0)!}
 var lines = [Int]()
@@ -21,7 +16,7 @@ var start = 0
 var end = lines.max()! + 1
 
 while (start + 1) < end {
-    let mid = (start + end) / 2 
+    let mid = (start + end) / 2
     var sum = 0
     
     for line in lines {
