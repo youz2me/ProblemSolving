@@ -2,23 +2,26 @@
 //  main.swift
 //  ProblemSolving_1003
 //
-//  Created by YOUJIM on 2023/06/29.
+//  Created by YOUJIM on 2023/07/11.
 //
 
-//import Foundation
+import Foundation
 
-var countZero = 0
-var countOne = 0
+var memoZero = [Int](repeating: -1, count: 41)
+var memoOne = [Int](repeating: -1, count: 41)
 
-func fibo(_ num: Int) -> Int {
-    if num == 0 { countZero += 1; return 0 }
-    else if num == 1 { countOne += 1; return 1 }
-    return (fibo(num - 1) + fibo(num - 2))
+memoZero[0] = 1
+memoZero[1] = 0
+memoOne[0] = 0
+memoOne[1] = 1
+
+for i in 2...40 {
+    memoOne[i] = memoOne[i - 1] + memoOne[i - 2]
+    memoZero[i] = memoZero[i - 1] + memoZero[i - 2]
 }
 
 for _ in 0..<Int(readLine()!)! {
-    countOne = 0
-    countZero = 0
-    fibo(Int(readLine()!)!)
-    print("\(countZero) \(countOne)")
+    let num = Int(readLine()!)!
+    print("\(memoZero[num]) \(memoOne[num])")
 }
+
