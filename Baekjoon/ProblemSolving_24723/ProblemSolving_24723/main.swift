@@ -1,11 +1,11 @@
 //
 //  main.swift
-//  ProblemSolving_1463
+//  ProblemSolving_24723
 //
 //  Created by YOUJIM on 2023/07/13.
 //
 
 import Foundation
 
-var num = Int(readLine()!)!
-var count = 0
+print(pow(2, Int(readLine()!)!))
+
