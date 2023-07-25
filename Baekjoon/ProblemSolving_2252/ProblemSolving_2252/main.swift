@@ -5,11 +5,11 @@
 //  Created by YOUJIM on 2023/07/23.
 //
 
+
 import Foundation
 
 let input = readLine()!.split(separator: " ").map { Int($0)! }
 
-// 그래프의 노드 수, 간선 수 입력
 var graph = [Int: [Int]]() // 인접 리스트를 표현하기 위한 딕셔너리
 var indegree = [Int](repeating: 0, count: input[0] + 1) // 각 노드의 진입 차수를 저장하는 배열
 
@@ -58,4 +58,3 @@ while !stack.isEmpty {
 
 // 위상 정렬된 결과 출력
 print(result.reduce(into: "", { $0 += "\($1) "}).dropLast())
-
