@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EF4B9467-5AF8-498D-B73F-35E9551D54AF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CDD8B88C-DBBC-41DE-BDE2-A94658D92881"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProblemSolving_1541/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "CDD8B88C-DBBC-41DE-BDE2-A94658D92881 - 5849927a563f695b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "ProblemSolving_1541"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/youz2me/Xcode/ProblemSolving/Baekjoon/ProblemSolving_1541/ProblemSolving_1541/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "3096">
+               </Location>
+               <Location
+                  uuid = "CDD8B88C-DBBC-41DE-BDE2-A94658D92881 - 5849927a563f69b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "ProblemSolving_1541"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/youz2me/Xcode/ProblemSolving/Baekjoon/ProblemSolving_1541/ProblemSolving_1541/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "3008">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
