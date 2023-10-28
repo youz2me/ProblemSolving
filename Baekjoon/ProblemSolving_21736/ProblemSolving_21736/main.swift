@@ -8,25 +8,26 @@
 import Foundation
 
 let input = readLine()!.split(separator: " ").map { Int($0)! }
-let N = input[0]
-let M = input[1]
 
 var campus = [[Character]]()
 var start: (Int, Int) = (0, 0)
 
-for i in 0..<N {
-    let row = Array(readLine()!)
-    for (j, char) in row.enumerated() {
-        if char == "I" { start = (i, j) }
+for _ in 0 ..< input[0] {
+    campus.append(Array(readLine()!))
+}
+
+for i in 0 ..< campus.count {
+    if campus[i].contains("I") {
+        start = (i, campus[i].firstIndex(of: "I")!)
     }
-    campus.append(row)
 }
 
 let directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]
-var visited = [[Bool]](repeating: [Bool](repeating: false, count: M), count: N)
+var visited = [[Bool]](repeating: [Bool](repeating: false, count: input[1]), count: input[0])
 var res = 0
 
 var queue = [(Int, Int)]()
+
 queue.append(start)
 visited[start.0][start.1] = true
 
@@ -37,7 +38,7 @@ while !queue.isEmpty {
         let nx = x + dx
         let ny = y + dy
 
-        if nx >= 0 && nx < N && ny >= 0 && ny < M {
+        if nx >= 0 && nx < input[0] && ny >= 0 && ny < input[1] {
             if campus[nx][ny] != "X" && !visited[nx][ny] {
                 queue.append((nx, ny))
                 visited[nx][ny] = true
@@ -50,5 +51,3 @@ while !queue.isEmpty {
 
 if res > 0 { print(res) }
 else { print("TT") }
-
-
