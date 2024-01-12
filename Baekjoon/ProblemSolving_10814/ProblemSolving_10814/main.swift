@@ -2,33 +2,29 @@
 //  main.swift
 //  ProblemSolving_10814
 //
-//  Created by YOUJIM on 1/11/24.
+//  Created by YOUJIM on 1/12/24.
 //
 
 import Foundation
 
-struct Person {
-    var name : String = ""
-    var age : Int = 0
-    var joinNum : Int = -1
-}
+var infos = [String: Double]()
 
-var numOfUser = Int(readLine()!)!
-var judgeUser = [Person](repeating: Person(), count: numOfUser)
-
-for i in 1 ... numOfUser {
-    let input = readLine()!.components(separatedBy: " ")
+for _ in 0 ..< Int(readLine()!)! {
+    var input = readLine()!.components(separatedBy: " ")
+    var temp = [input[1] : Double(input[0])!]
     
-    judgeUser[i - 1].name = input[1]
-    judgeUser[i - 1].age = Int(input[0])!
-    judgeUser[i - 1].joinNum = i
+    while infos.contains(where: { $0.value == temp.first!.value }) {
+        temp.updateValue(temp.first!.value + 0.1, forKey: temp.first!.key)
+    }
+    
+    infos.updateValue(temp.first!.value, forKey: temp.first!.key)
 }
 
-judgeUser = judgeUser.sorted(by: {
-    if $0.age == $1.age { return $0.joinNum < $1.joinNum }
-    return $0.age < $1.age
-})
+let sorted = infos.sorted {
+    if $0.value == $1.value { return $0.key < $1.key }
+    return $0.value < $1.value
+}
 
-for i in 0 ..< numOfUser {
-    print(judgeUser[i].age, judgeUser[i].name)
+for sort in sorted {
+    print("\(Int(floor(sort.value))) \(sort.key)")
 }
