@@ -2,8 +2,9 @@
 //  main.swift
 //  ProblemSolving_2630
 //
-//  Created by YOUJIM on 2023/08/28.
+//  Created by YOUJIM on 5/8/24.
 //
+
 
 import Foundation
 
@@ -11,7 +12,7 @@ var board = [[Int]]()
 var count = [0, 0]
 
 for _ in 0 ..< Int(readLine()!)! {
-    board.append(readLine()!.split(separator: " ").map { Int(String($0))! })
+    board.append(readLine()!.split(separator: " ").map { Int($0)! })
 }
 
 func check(_ x: Int, _ y: Int, _ width: Int) -> Bool {
@@ -20,7 +21,6 @@ func check(_ x: Int, _ y: Int, _ width: Int) -> Bool {
             if board[x][y] != board[i][j] { return false }
         }
     }
-    
     return true
 }
 

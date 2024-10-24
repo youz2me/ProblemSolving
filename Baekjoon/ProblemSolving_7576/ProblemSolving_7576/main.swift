@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Queue<T>{
+struct Queue<T> {
     var enqueueArray: [T] = []
     var dequeueArray: [T] = []
 
@@ -15,9 +15,7 @@ struct Queue<T>{
         return enqueueArray.isEmpty && dequeueArray.isEmpty
     }
 
-    mutating func enqueue(_ n: T) {
-        enqueueArray.append(n)
-    }
+    mutating func enqueue(_ n: T) { enqueueArray.append(n) }
 
     mutating func dequeue() -> T? {
         if dequeueArray.isEmpty{
@@ -29,14 +27,14 @@ struct Queue<T>{
 }
 
 let size = readLine()!.split(separator: " ").map{ Int($0)! }, directions = [(-1, 0), (0, -1), (1, 0), (0, 1)]
-var box = [[Int]](), start = [(Int, Int)]()
+var box = [[Int]]()
+var start = [(Int, Int)]()
 
-for y in 0..<size[1] {
+for y in 0 ..< size[1] {
     let line = readLine()!.split(separator: " ").map{ Int($0)! }
+    
     line.enumerated().forEach { bundle in
-        if bundle.element == 1 {
-            start.append((bundle.offset, y))
-        }
+        if bundle.element == 1 { start.append((bundle.offset, y)) }
     }
     box.append(line)
 }
